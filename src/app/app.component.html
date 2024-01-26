@@ -1,13 +1,26 @@
 <div class="app-container my-1">
-  <nav
+
+  <div class="header">
+
+    <nav
     class="buttons flex justify-center border border-gray-200 p-6 rounded-md"
   >
+  <!-- <img class="logo" alt="law" src="./assets/logo.png" /> -->
     <a class="button" routerLink="/home">Home</a>
     <a class="button" routerLink="/about">AboutUs</a>
     <a class="button" routerLink="/practice">Areas of Practice</a>
     <a class="button" routerLink="/contacts">Contact Us</a>
   </nav>
-  <img alt="law" src="./assets/LawBanner.png" />
+  
+  </div>
+<section class="container">
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img id="slider-1"   src="./assets/lawGavel.jpg" />
+
+    </div>
+  </div>
+</section>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
