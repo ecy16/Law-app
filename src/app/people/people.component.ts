@@ -3,12 +3,12 @@ import { FooterComponent } from "../footer/footer.component";
 import { HeaderComponent } from "../header/header.component";
 
 @Component({
-    selector: 'app-contacts',
+    selector: 'app-people',
     standalone: true,
-    templateUrl: './contacts.component.html',
-    styleUrl: './contacts.component.scss',
+    templateUrl: './people.component.html',
+    styleUrl: './people.component.scss',
     imports: [FooterComponent, HeaderComponent]
 })
-export class ContactsComponent {
+export class PeopleComponent {
 
 }
