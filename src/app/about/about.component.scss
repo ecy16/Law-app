@@ -1,4 +1,8 @@
-.about-images{
-    // width: 80%;
-    height: 70%;
+.image-wrapper{
+    background: url("/assets/Nairobi.jpg");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+
 }

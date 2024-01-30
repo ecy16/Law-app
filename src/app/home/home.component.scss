@@ -1,8 +1,18 @@
+.slick-prev:before,.slick-next:before{
+    color: black !important;
+}
+.img-style{
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+}
+.next{
+    color: black !important;
 
-
-
-
+}
 
 .practice-container{
     background-image: url("/assets/booksBanner.jpg");
 }
+

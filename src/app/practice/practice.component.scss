@@ -1,4 +1,38 @@
 .practice-container{
-    // background-image: url("/assets/lawPartner.jpg");
     background-color: maroon;
+
+}
+.corporate-container{
+    transition: transform 0.3s ease;
+    pointer-events: visible;
+
+}
+.corporate-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(171, 76, 76, 0.2);
+}
+.dispute-container{
+    transition: transform 0.3s ease;
+    pointer-events: visible;
+}
+.dispute-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(171, 76, 76, 0.2);
+}
+.banking-container{
+    transition: transform 0.3s ease;
+    pointer-events: visible;
+
+}
+.banking-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(171, 76, 76, 0.2);
+}
+.criminal-container{
+    transition: transform 0.3s ease;
+    pointer-events: visible;
+}
+.criminal-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(171, 76, 76, 0.2);
 }

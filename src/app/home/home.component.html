@@ -1,4 +1,20 @@
 <app-header></app-header>
+<ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+        @for (slide of slides; track slide.img) {
+            <div ngxSlickItem class="slide">
+                  <img src="{{ slide.img }}" alt="" width="100%">
+            </div>
+        }
+    </ngx-slick-carousel>
+
+
+
 
 <div class="main-container">
   <div class="about-container p-4 flex justify-center  text-red-950">
@@ -55,13 +71,12 @@
         <button  class=" mt-1 text-sm font-bold"(click)="onBtnClick()">Read More</button>
       </div>
       <div class=" p-4 m-4 shadow-xl  rounded-md text-center justify-between">
-        <h1 class="font-bold text-2xl flex justify-center p-4">Consultancy and Legal Advisory</h1>
+        <h1 class="font-bold text-2xl flex justify-center p-4">Criminal Law</h1>
         <p class="text-center">
-          Welcome to our Consultancy and Legal Advisory Department, where
-          strategic guidance meets comprehensive solutions. Our team of seasoned
-          consultants and legal advisors is committed to providing clients with
-          insightful perspectives and innovative strategies to navigate the
-          intricacies of their business challenges. 
+          Welcome to our Criminal Law Department, where justice is our utmost
+          priority. Our dedicated team of experienced criminal defense attorneys
+          is committed to providing unwavering advocacy and strategic
+          representation for individuals facing criminal charges.
         </p>
         <button class="mt-1 text-sm font-bold" (click)="onBtnClick()">Read More</button>
       </div>
