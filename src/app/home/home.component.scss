@@ -15,4 +15,30 @@
 .practice-container{
     background-image: url("/assets/booksBanner.jpg");
 }
+.animation-container{
+    // font-size: 150px;
+    // color: transparent;
+    // -webkit-text-stroke: 1px #fff;
+    background-image: url("/assets/Building.jpg");
+    background-size:100% 100%;
 
+    // -webkit-background-clip: text;
+    // background-position: 0 0;
+    // animation: back 20s linear infinite;
+
+    // background-color: rgb(7, 7, 48);
+}
+@keyframes back{
+    100%{
+        background-position: 4000px 0;
+    }
+}
+.heading{
+    font-size: 150px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-image: url("/assets/building.jpg");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}

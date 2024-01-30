@@ -1,18 +1,7 @@
 <app-header></app-header>
-<ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
-                        [config]="slideConfig" 
-                        (init)="slickInit($event)"
-                        (breakpoint)="breakpoint($event)"
-                        (afterChange)="afterChange($event)"
-                        (beforeChange)="beforeChange($event)">
-        @for (slide of slides; track slide.img) {
-            <div ngxSlickItem class="slide">
-                  <img src="{{ slide.img }}" alt="" width="100%">
-            </div>
-        }
-    </ngx-slick-carousel>
-
+<div class="animation-container text-center">
+  <h1 class="heading">GALMUR ADVOCATES LLP</h1>
+</div>
 
 
 
@@ -76,7 +65,7 @@
           Welcome to our Criminal Law Department, where justice is our utmost
           priority. Our dedicated team of experienced criminal defense attorneys
           is committed to providing unwavering advocacy and strategic
-          representation for individuals facing criminal charges.
+          representation.
         </p>
         <button class="mt-1 text-sm font-bold" (click)="onBtnClick()">Read More</button>
       </div>
